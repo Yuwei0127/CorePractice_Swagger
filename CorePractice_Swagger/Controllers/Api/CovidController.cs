@@ -20,8 +20,11 @@ namespace CorePractice_Swagger.Controllers.Api
             _covidService = covidService;
         }
         
-        // GET: api/Covid
-        [HttpGet("Get")]
+        /// <summary>
+        /// 取得台中全部確診資料
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("GetAll")]
         public async Task<IActionResult> Get()
         {
             // 取得確診資訊
